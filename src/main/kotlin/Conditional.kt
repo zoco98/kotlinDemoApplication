@@ -22,15 +22,42 @@ fun main(args: Array<String>){
     val num: Double = Math.random();
     if (num.toString().isNotEmpty()) println("$num is random number") else println("that's impossible")
 
-    val str1: String = "Madam"
-    val str2: String = "Madam"
+    /*unlike java string having same value in kotlin also
+    * holds same address or refrencial value
+    * as well as different for different value
+    * == or .equal() for structural equality -- != structural inequality
+    * and === used for referencial equality -- !== referencial inequality
+    */
+    val str1: String = "madam"
+    val str2: String = "madam"
 
     if(str1 == str2) println("Same value") else println("Different value")
-    if(str1===str2) println("Same address") else println("Different address")
+    if(str1 === str2) println("Same address") else println("Different address")
 
     val str3: String = "Heavy"
     val str4: String = "Low"
 
     if(str3 == str4) println("Same value") else println("Different value")
-    if(str3===str4) println("Same address") else println("Different address")
+    if(str3 === str4) println("Same address") else println("Different address")
+
+    val i: Int = 11
+    val j: Int = 11
+
+    if(i == j) println("Same value") else println("Different value")
+    if(i === j) println("Same address") else println("Different address")
+
+    /*But lets see obj creation
+    * so exceptions see...
+    * whatever the value would be the objects has
+    * distinct refernce for each */
+    val frstP = Person("Sriparna")
+    val scndP = Person("Sriparna")
+    val thrdP = Person("Ayantika")
+    println(frstP===scndP)
+    println(frstP==scndP)
+    println(frstP===thrdP)
+    println(frstP==thrdP)
 }
+class Person(
+    var name: String
+)
