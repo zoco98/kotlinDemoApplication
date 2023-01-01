@@ -27,4 +27,10 @@ fun main(args: Array<String>){
 
     if(str1 == str2) println("Same value") else println("Different value")
     if(str1===str2) println("Same address") else println("Different address")
+
+    val str3: String = "Heavy"
+    val str4: String = "Low"
+
+    if(str3 == str4) println("Same value") else println("Different value")
+    if(str3===str4) println("Same address") else println("Different address")
 }
