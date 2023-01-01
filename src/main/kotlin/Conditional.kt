@@ -21,4 +21,10 @@ fun main(args: Array<String>){
     //single line if-- we can write in one line called one-liner which is more readable
     val num: Double = Math.random();
     if (num.toString().isNotEmpty()) println("$num is random number") else println("that's impossible")
+
+    val str1: String = "Madam"
+    val str2: String = "Madam"
+
+    if(str1 == str2) println("Same value") else println("Different value")
+    if(str1===str2) println("Same address") else println("Different address")
 }
