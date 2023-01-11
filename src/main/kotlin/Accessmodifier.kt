@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
     emp.getAdminTask()
 
 }
-/*internal modifier does not allows to access vars outside the class scope it is like strictly private*/
+/*internal modifier does not allow to access vars outside the class scope it is like strictly private*/
 internal class User(
     var task: String ?= "Unknown"
 )

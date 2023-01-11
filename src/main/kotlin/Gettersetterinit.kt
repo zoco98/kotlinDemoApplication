@@ -32,6 +32,7 @@ fun main(args: Array<String>) {
                     println("not executed")
                 }
             }
+        /*The initializer block will execute first of all actions in class*/
         init {
             val sum = add(x,y)
             println("//===Intializer block starts===//")
